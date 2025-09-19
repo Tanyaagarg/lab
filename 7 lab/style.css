@@ -1,0 +1,95 @@
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* White card container */
+.container {
+  background: #fff;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Task input section */
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.task-input button {
+  padding: 8px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background: #0056b3;
+}
+
+/* Each task box */
+.task {
+  background: #f9f9f9;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Completed tasks look crossed out */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Task buttons */
+.task-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.task-buttons button {
+  flex: 1;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Different button colors */
+.task-buttons button:nth-child(1) { background: #28a745; } /* Complete */
+.task-buttons button:nth-child(2) { background: #ffc107; color: black; } /* Edit */
+.task-buttons button:nth-child(3) { background: #dc3545; } /* Delete */
+
+.task-buttons button:hover {
+  opacity: 0.85;
+}
